@@ -9,6 +9,30 @@ A microcontroller-based protection system that continuously monitors AC mains vo
 
 ---
 
+## 📸 System Screenshots
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="test_evidence/safe.png" alt="Normal Voltage" width="280"/><br/>
+      <b>✅ Normal Voltage</b><br/>
+      <sub>197–237 V &nbsp;·&nbsp; Relay ON &nbsp;·&nbsp; Load connected</sub>
+    </td>
+    <td align="center">
+      <img src="test_evidence/over_voltage.png" alt="Over Voltage" width="280"/><br/>
+      <b>🔴 Over Voltage</b><br/>
+      <sub>&gt; 242 V &nbsp;·&nbsp; Relay OFF &nbsp;·&nbsp; Load disconnected</sub>
+    </td>
+    <td align="center">
+      <img src="test_evidence/under_voltage.png" alt="Under Voltage" width="280"/><br/>
+      <b>🔵 Under Voltage</b><br/>
+      <sub>&lt; 192 V &nbsp;·&nbsp; Relay OFF &nbsp;·&nbsp; Load disconnected</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
 ## 📋 Table of Contents
 
 - [Overview](#-overview)
@@ -135,15 +159,14 @@ See [`project_files/README.md`](project_files/README.md) for detailed steps.
 
 ## 🧪 Test Evidence
 
-Three simulation screenshots are provided in [`test_evidence/`](test_evidence/):
+All three system states captured from Proteus 8 simulation:
 
-| Screenshot | Condition |
-|------------|-----------|
-| `safe.png` | Normal voltage – relay ON |
-| `over_voltage.png` | Over-voltage – relay tripped |
-| `under_voltage.png` | Under-voltage – relay tripped |
+| Normal Voltage | Over Voltage | Under Voltage |
+|:-:|:-:|:-:|
+| ![Safe](test_evidence/safe.png) | ![Over](test_evidence/over_voltage.png) | ![Under](test_evidence/under_voltage.png) |
+| Relay **ON** · Load connected | Relay **OFF** · Tripped high | Relay **OFF** · Tripped low |
 
-Full test results table: [`test_evidence/README.md`](test_evidence/README.md)
+Full test results & pass/fail log: [`test_evidence/README.md`](test_evidence/README.md)
 
 ---
 
