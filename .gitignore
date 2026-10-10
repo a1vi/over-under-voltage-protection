@@ -1,0 +1,19 @@
+# Compiled output
+*.hex
+*.elf
+*.map
+*.bin
+
+# Arduino IDE temp files
+*.ino.globals.h
+*.ino.cpp
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.swp
+*~
